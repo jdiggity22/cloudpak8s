@@ -248,7 +248,7 @@ postgres:
 
 *Important*: The documentation includes a “dry run” to preview the install command, but if you run the preview before running the install, then the install will hang. This is a known bug, so skip the preview “dry run”.
 
-Note that IBM Cloud File Storage (ibmc-file-gold-gid storage class) is used.
+Note that IBM Cloud File Storage (`ibmc-file-gold-gid` storage class) is used. Also note that `--max-image-retry` has been increased from the default of 5 to 25. This is due to the fact that the image transfers often fail, which requires a retry of the command. Increasing this value will hopefully save you from having to retry this command after an image transfer failure.
 
 ```
 bin/cpd-linux --repo ./repo.yaml \
@@ -262,6 +262,7 @@ bin/cpd-linux --repo ./repo.yaml \
 --target-registry-password $(oc whoami -t) \
 --accept-all-licenses \
 --insecure-skip-tls-verify \
+--max-image-retry 25 \
 --override override.yaml
 ```
 
