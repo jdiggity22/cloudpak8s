@@ -19,6 +19,7 @@
     "gatsby-mdx-fix": "0.0.3",
     "gatsby-plugin-google-analytics": "^2.2.4",
     "gatsby-plugin-mdx": "^1.2.34",
+    "gatsby-plugin-no-index": "^1.0.1",
     "gatsby-source-filesystem": "^2.3.24",
     "gatsby-theme-carbon": "^1.26.7",
     "node-sass": "^4.13.1",
