@@ -25,6 +25,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-no-index`,
+    },
+    {
+      resolve: `@babel/preset-react`,
+      options: {
+        runtime: "classic",
+      },
+    },
+    {
       resolve: 'gatsby-theme-carbon',
       options: {
         isSearchEnabled: true,
