@@ -34,13 +34,6 @@ module.exports = {
       },
     },
     {
-      resolve: `fsevents`,
-      options: {
-        OS: "darwin",
-        Arch: "any",
-      },
-    },
-    {
       resolve: 'gatsby-theme-carbon',
       options: {
         isSearchEnabled: true,
