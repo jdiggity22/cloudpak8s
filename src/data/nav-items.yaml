@@ -114,6 +114,8 @@
       path: /mcm/cp4mcm_netcool_ops_manager/
     - title: "NOM - Day2"
       path: /mcm/cp4mcm_nom_day2/
+    - title: "CP4MCM 2.0 - Install"
+      path: /mcm/cp4mcm20_mcm_install/
 - title: Cloud Pak for Security
   pages:
     - title:  Introduction
