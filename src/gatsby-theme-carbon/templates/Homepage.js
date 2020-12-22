@@ -5,9 +5,27 @@ import { calloutLink } from './Homepage.module.scss';
 
 import Carbon from '../../images/cloud-paks-small.png';
 
-const FirstLeftText = () => <p>IBM Cloud Paks</p>;
-
+const FirstLeftText = () => <p>IBM Cloud Pak Playbook is moving</p>;
 const FirstRightText = () => (
+  <p>
+    <font size="5">
+    The IBM Cloud Pak Playbook web site will be moving to an IBM internal
+    network location as of October 19, 2020. The cloudpak8s.io URL will 
+    remain the same, but the site will only be accessible to users on the
+    IBM internal network.
+    </font>
+    <a
+      className={calloutLink}
+      href="https://www.ibm.com/cloud/paks/"
+    >
+      IBM Cloud Paks →
+    </a>
+  </p>
+);
+
+const SecondLeftText = () => <p>IBM Cloud Paks</p>;
+
+const SecondRightText = () => (
   <p>
     <font size="5">
     IBM Cloud™ Paks are enterprise-ready, containerized software solutions 
@@ -20,13 +38,6 @@ const FirstRightText = () => (
     >
       IBM Cloud Paks →
     </a>
-  </p>
-);
-
-const SecondLeftText = () => <p></p>;
-
-const SecondRightText = () => (
-  <p>
   </p>
 );
 

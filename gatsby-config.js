@@ -22,7 +22,16 @@ module.exports = {
       options: {
         trackingId: "UA-149377589-5",
         head: true
-      }
+      },
+    },
+    {
+      resolve: `gatsby-plugin-no-index`,
+    },
+    {
+      resolve: `@babel/preset-react`,
+      options: {
+        runtime: "classic",
+      },
     },
     {
       resolve: 'gatsby-theme-carbon',

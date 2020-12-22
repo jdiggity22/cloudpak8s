@@ -31,6 +31,9 @@ a working OpenShift cluster with the required capacity.
 to make sure you have sized your cluster 
 appropriately and have sufficient capacity.
 
+<ul>
+</ul>
+
 ## Adding CatalogSource to OpenShift Catalog
 
 1. Login to your OpenShift cluster console.
@@ -94,6 +97,9 @@ and you can see these operators on the **Installed Operators** page.
 
    ![](s_86E1C612A8E4034D60635859136C69E365CCD6AF40EB763B06F97C01BB20953F_1594228923197_image.png)
 
+<ul>
+</ul>
+
 ## Customizing the installation
 Here we walk through an example of how you can customize the installation configuration. This is just an example. A complete list of 
 customizations can be found at this 
@@ -105,8 +111,7 @@ In this section we customize the installation by modifying the
 `elasticsearch` component from the `OperandRequest` to prevent it from 
 being installed. 
 
-1. From the **Project** drop-down list, select the **ibm-common-services** 
-namespace. You see the **Operand Deployment Lifecycle Manager** Operator.
+1. From the Admin console open Operators->Installed Operators->Operand Deployment Lifecycle Manager
 
 2. Click the **OperandConfig** and then select the existing 
 `common-services` OperandConfig.
@@ -166,6 +171,9 @@ spec:
 
 Note: If you see pods in the `ibm-common-services` namespaces stuck in `CreateContainerConfigError` status and are running OpenShift Container Platfrom 4.4.x check the workaround here:
 https://www.ibm.com/support/knowledgecenter/SSHKN6/installer/3.x.x/troubleshoot/op_pending.html
+
+<ul>
+</ul>
 
 ## Login to common services
 
